@@ -16,10 +16,28 @@ public class StringUtils {
     }
 
     public static String[] getAllSubStrings(String string) {
-        return null;
+        int size = getNumberOfSubStrings(string);
+        String[] ans = new String[size];
+        int count = 0;
+
+        for(int i = 0; i < string.length() - 1; i++){
+            for (int j = 0; j < string.length() + 1 - i; j++){
+                ans[count] = string.substring(i, j);
+                count++;
+            }
+        }
+
+        return ans;
     }
 
     public static Integer getNumberOfSubStrings(String input){
-        return null;
+        int count = 0;
+
+        for(int i = 1; i < input.length(); i++){
+            for (int j = 0; j < input.length() + 1 - i; j++){
+                count++;
+            }
+        }
+        return count;
     }
 }
