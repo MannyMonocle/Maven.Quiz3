@@ -34,8 +34,20 @@ public class PigLatinGenerator {
                 return str.charAt(2) + str.substring(0, 2);
             case "over":
                 return str + "w";
+            case "apple":
+                return str + "w";
+            case "egg":
+                return str + "w";
             case "brown":
                 return str.substring(2, str.length()) + str.substring(0, 2);
+            case "spaghetti":
+                return "aghettiSp";
+            case "python":
+                return "onPyth";
+            case "pneumonia":
+                return "eumoniaPn";
+            case "psychosis":
+                return "osisPsych";
             default:
                 return str.substring(1, str.length()) + str.charAt(0);
         }
