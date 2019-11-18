@@ -5,5 +5,11 @@ package rocks.zipcode.io.quiz3.collections;
  * Ensure there are enumerations for, `COMPLETED`, `INCOMPLETE`, `PENDING`
  */
 public enum LabStatus {
-    ADD_ENUMERATIONS_HERE;
+    COMPLETED(100) , INCOMPLETE(50), PENDING(0);
+
+    int values;
+    LabStatus(int val){
+        values = val;
+    }
+
 }
